@@ -277,8 +277,54 @@ select {
   margin-right: 10px;
 }
 
-select{
+category-select{
     background-color: #f7f8fd;
     color: #3a4374;
     width: 456px;
+}
+
+.feedbackTitle-input{
+  width: 456px;
+  border: none;  
+}
+.feedbackDetail{
+  width: 432px;
+}
+.feedbackDetail-input{
+  width: 456px;
+  border: none;
+}
+
+
+//editfeedback 
+
+.editfeedback-outer{
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  
+}
+
+.editfeedback{
+  width: 540px;
+  height: 822px;
+  margin: auto;
+  margin-top: 180px;
+  border: 1px solid black;
+}
+
+.editfeedback-form{
+  border: 1px solid black;
+  width: 456px;
+  height: 620px;
+  top:"342";
+  margin: auto;
+  
+
+  
+}
+
+.editfeedback-button{
+  display: flex;
+  justify-content: space-between;
 }

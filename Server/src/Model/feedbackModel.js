@@ -4,24 +4,24 @@ const feedbackSchema = new mongoose.Schema(
   {
     feedback: {
       type: String,
-      required: true,
+      // required: true,
       lowercase: true,
       trim: true,
     },
     category: {
       type: String,
-      required: true,
+      // required: true,
       lowercase: true,
       trim: true, 
     },
     feedbackdetail: {
       type: String,
-      required: true,
-      unique: true,
+      // required: true,
+      lowercase: true,
       trim: true,
     }
   },
   { timestamps: true }
 );
 
-export default  mongoose.model("feedback", feedbackSchema);
+module.exports = mongoose.model("feedback", feedbackSchema);
