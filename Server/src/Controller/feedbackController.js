@@ -1,5 +1,5 @@
 const feedbackModel = require("../Model/feedbackModel.js");
-const {validateName} = require("../validation/validation.js");
+
 
 //=================================================== createUsers ================================================
 
@@ -19,7 +19,7 @@ const createFeedback = async function (req, res) {
     if (!feedbackdetail) return res.status(400).send({ status: false, msg: "Please provide an feedbackdetail" });
     
 
-    if (!validateName(feedback)) return res.status(400).send({ status: false, message: "feedback can not contain Number and special character" });
+    
 
     const saveData = await feedbackModel.create(data);
     console.log(saveData)
